@@ -12,7 +12,7 @@ function App() {
         <h2>
           This is a branch for a2
         </h2>
-        
+
         <a
           className="App-link"
           href="https://reactjs.org"
