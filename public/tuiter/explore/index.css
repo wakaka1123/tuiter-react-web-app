@@ -1,0 +1,112 @@
+.wd-fg-color-white{
+  color:white;
+}
+
+body{
+  font-family: Arial, serif;
+  background-color: black;
+  color: white;
+  border:  rgb(47, 51, 54);
+}
+
+.wd-margin-top{
+  margin-top: 10px;
+}
+
+.wd-nav-tabs{
+  color: rgb(110, 118, 125);
+  margin-bottom:0px;
+  padding: 0px;
+}
+
+.wd-nav-tabs li{
+  margin-top:16px;
+  margin-left:16px;
+  margin-right:16px;
+  padding-bottom: 16px;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.wd-nav-tabs .wd-nav-selected{
+  border-bottom: solid 4px;
+  color: rgb(29,161,242);
+}
+
+.wd-input {
+  background-color: rgb(33,35,39);
+  color:white;
+  border-radius: 10px;
+  padding-left: 16px;
+  margin-left: 16px;
+  border:none;
+  outline: none;
+}
+
+.wd-input ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(103,112,119);
+  opacity: 1; /* Firefox */
+}
+
+.wd-float-left{
+  float: left;
+}
+
+.wd-float-gear{
+  float: right;
+  margin-right: 16px;
+  color: rgb(29,161,242);
+}
+
+.wd-float-right {
+  float: right;
+  margin-right: 0px;
+}
+.wd-float-done{
+  clear:both;
+}
+
+.wd-dots{
+  color: rgb(110, 118, 125);
+}
+
+.wd-flex-container {
+  border-width: 0px;
+  border-color: black;
+  border-style: solid;
+}
+.wd-flex-box {
+  border: 1px rgb(47, 51, 54) solid;
+  margin-left: 0px;
+  padding: 16px;
+  height: 120px;
+}
+
+.wd-suggested-posts{
+  font-size: 13px;
+  color:rgb(110, 118, 125);
+}
+
+.wd-author{
+  font-size: 13px;
+  color:white
+}
+
+.wd-post{
+  font-size: 18px;
+  color:white;
+}
+
+.wd-img{
+  width: 100px;
+  height:100px;
+  border-radius: 10px;
+}
+
+.wd-upper-component-border{
+  border: 1px rgb(47, 51, 54) solid;
+}
+.wd-show-boarder{
+  border: 1px white solid;
+}
