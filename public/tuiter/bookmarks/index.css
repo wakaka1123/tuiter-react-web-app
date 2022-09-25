@@ -131,6 +131,7 @@ body {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border: 1px lightgray solid;
+
 }
 
 .wd-mid-content{
@@ -140,6 +141,7 @@ body {
   width: 504px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  margin-top:-5px
 }
 
 .wd-mid-content-padding{
