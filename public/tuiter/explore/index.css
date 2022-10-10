@@ -116,7 +116,7 @@ body{
 
 .wd-search-icon-pos{
   bottom: 11px;
-  left: 35px;
+  left: 25px;
 }
 
 .wd-tuit-btn-width{
@@ -126,12 +126,20 @@ body{
 .wd-input-bg{
   background-color:rgb(33,35,39);
   border:0px;
-  width: 85%;
+}
+
+.wd-input-size{
+  width: 95%;
 }
 
 .wd-left-nav{
   font-color:white;
-  background-color: black;
+  background-color:rgb(33,35,39);
+}
+
+.wd-right-follow{
+  font-color:white;
+  background-color:rgb(33,35,39);
 }
 
 .wd-mid-col-border{
@@ -148,3 +156,4 @@ body{
 .wd-show-more{
   text-decoration: none;
 }
+
