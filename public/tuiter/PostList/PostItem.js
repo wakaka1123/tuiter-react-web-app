@@ -7,7 +7,7 @@ const PostItem = (onepost) => {
       
             <div class="row">
             <div class="col-11">
-            <div class="wd-name">${onepost.userName}<span class="wd-name-handle">@${onepost.handle} &#149; <time
+            <div class="wd-name">${onepost.userName}<span class="wd-name-handle"> <i class="fas fa-check-circle"></i> @${onepost.handle} &#149; <time
               datetime="7-31">${onepost.time}</time></span></div>
             </div>
             <div class="col-1">
