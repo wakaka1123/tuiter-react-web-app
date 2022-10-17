@@ -1,0 +1,215 @@
+
+.wd-top-dots {
+  color: rgb(29, 161, 242);
+  padding-right: 16px;
+  padding-top: 12px;
+}
+
+.wd-tuit-title-dots{
+  position:absolute;
+  top:12px;
+  right:16px;
+  color:lightgray;
+}
+
+.wd-pos-relative{
+  position:relative;
+}
+
+
+.wd-bookmarks-title {
+  padding-left: 16px;
+  padding-top: 12px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wd-title-handle {
+  color: lightgray;
+  font-size: 13px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+}
+
+.wd-float-done {
+  clear: both;
+}
+
+.wd-float-img {
+  float: left;
+  width: 76px
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-float-left-content {
+  margin-top: 0px;
+  float: left;
+  margin-left: 76px;
+}
+
+.wd-img {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px
+
+}
+
+.wd-inner-img {
+  margin-right: 4px;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px
+}
+
+
+.wd-name {
+  font-size: 15px;
+  padding-top: 2px;
+}
+
+.wd-name-handle {
+  padding-top: 12px;
+  color: gray;
+  font-size: 15px;
+}
+
+.wd-show-boarder {
+  border: 1px white solid;
+}
+
+.wd-pos-avatar {
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-right: 12px;
+}
+
+.wd-pos-abs-avatar{
+  position: absolute;
+  top:12px;
+  left:16px;
+}
+
+.wd-cell-align-top{
+  vertical-align: top;
+}
+
+.wd-tuit-content {
+  margin-right: 16px;
+  max-width: 506px;
+  color: white;
+  font-size: 15px;
+}
+
+
+.wd-rounded-corners-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.wd-rounded-corners-bottom {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.wd-mid-pic{
+  margin-top:12px;
+  /*width: 444px;*/
+  /*background-image: url("../pics/duck.jpeg");*/
+  height: 264px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px lightgray solid;
+
+}
+
+.wd-mid-pic-btn-rounded{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px lightgray solid;
+}
+
+.wd-mid-content{
+  font-size: 15px;
+  border: 1px lightgray solid;
+  padding: 10px;
+  margin-top: 5px;
+
+  /*width: 444px;*/
+  border-radius: 20px;
+
+}
+
+.wd-mid-content-hide{
+  display: none;
+}
+
+.wd-mid-content-padding{
+  padding: 12px;
+}
+
+.wd-mid-content-padding-hide{
+  display: none;
+}
+
+
+.wd-poster-title{
+  color: white;
+  font-weight:bold;
+}
+
+.wd-bar{
+  padding-top: 10px;
+  display: flex;
+  /*justify-content: space-around;*/
+}
+.wd-bar-item{
+  color: gray;
+  text-decoration: none;
+}
+
+.wd-bar-item-left-padding{
+  padding-left: 12px;
+  padding-right: 48px;
+
+}
+
+.wd-bar-item-liked{
+  color: red;
+}
+
+.wd-name-abs{
+  position: absolute;
+  top:12px;
+  left: 76px;
+  font-size: 15px;
+  color:white;
+}
+
+.wd-content-abs{
+  max-width: 506px;
+  padding-right: 16px;
+}
+
+.wd-blue-check{
+  color: #0d6efd;
+}
+
+.wd-show-thread{
+  padding-top: 18px;
+}
+
+.wd-remove-underline{
+  text-decoration: none;
+}
+
+.wd-top-retweet-handle{
+  display: flex;
+  justify-content: end;
+}
