@@ -31,7 +31,7 @@ const PostListItem = (
       <div className="list-group-item">
         <div>
           {isRetweeted && <div className="row">
-            <div className="col-2 pe-4 wd-top-retweet-handle "><i className="bi bi-arrow-repeat"></i></div>
+            <div className="col-2 wd-top-retweet-handle "><i className="bi bi-arrow-repeat"></i></div>
             <div className="col-10 p-0">{onepost["retweet-handle"]}</div>
 
 
@@ -40,7 +40,7 @@ const PostListItem = (
 
         </div>
       <div className="row wd-upper-component-border">
-        <div className="col-2 p-0 "><img className="wd-img wd-pos-avatar" src={`/images/${onepost.avatar}`}/></div>
+        <div className="col-2"><img className="wd-img wd-pos-avatar" src={`/images/${onepost.avatar}`} alt=""/></div>
         <div className="col-10 ps-0">
 
           <div className="row">
@@ -59,11 +59,11 @@ const PostListItem = (
           </div>
 
           <div>
-            {!isPostContent&& <img className="wd-mid-pic img-fluid w-100 wd-mid-pic-btn-rounded" src={`/images/${onepost.postImage}`}/>}
+            {!isPostContent&& <img className="wd-mid-pic img-fluid w-100 wd-mid-pic-btn-rounded" src={`/images/${onepost.postImage}`} alt=""/>}
             {isPostContent && <div>
 
               <div className="wd-mid-content">
-                <div className="wd-name"><img className="wd-inner-img" src={`/images/${onepost.innerPostImage}`}/>
+                <div className="wd-name"><img className="wd-inner-img" src={`/images/${onepost.innerPostImage}`} alt=""/>
                   {onepost.innerPostContentName} <i className="bi bi-check-circle-fill wd-blue-check" ></i><span className="wd-name-handle"> @{onepost.innerPostContentHandle}
                   <i className="bi bi-dot"></i>{onepost.innerPostContentTime}</span></div>
                 <div>
@@ -80,14 +80,14 @@ const PostListItem = (
 
 
           <div className="wd-bar" >
-            <a href="#" className="wd-bar-item"><i className="bi bi-chat"></i><span className="wd-bar-item-left-padding">{onepost.comments}</span></a>
-            <a href="#" className="wd-bar-item"><i className="bi bi-arrow-repeat"></i><span className="wd-bar-item-left-padding">{onepost.retweets}</span></a>
-            <a href="#" className="wd-bar-item"><i className="bi bi-heart"></i><span className="wd-bar-item-left-padding">{onepost.likes}</span></a>
-            <a href="#" className="wd-bar-item"><i className="bi bi-upload"></i></a>
+            <a href="/" className="wd-bar-item"><i className="bi bi-chat"></i><span className="wd-bar-item-left-padding">{onepost.comments}</span></a>
+            <a href="/" className="wd-bar-item"><i className="bi bi-arrow-repeat"></i><span className="wd-bar-item-left-padding">{onepost.retweets}</span></a>
+            <a href="/" className="wd-bar-item"><i className="bi bi-heart"></i><span className="wd-bar-item-left-padding">{onepost.likes}</span></a>
+            <a href="/" className="wd-bar-item"><i className="bi bi-upload"></i></a>
           </div>
 
           <div className="wd-show-thread">
-            {isThread && <a  className="wd-remove-underline" href="">{onepost["show-thread-link"]}</a>}
+            {isThread && <a className="wd-remove-underline" href="/">{onepost["show-thread-link"]}</a>}
           </div>
 
         </div>

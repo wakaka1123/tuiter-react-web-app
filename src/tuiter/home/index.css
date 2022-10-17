@@ -211,5 +211,5 @@
 
 .wd-top-retweet-handle{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
