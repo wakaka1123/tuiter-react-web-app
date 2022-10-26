@@ -7,9 +7,12 @@ const NavigationSidebar = () => {
   const {pathname} = useLocation();
   const paths = pathname.split('/')
   const active = paths[2];
+
+  // console.log(paths.length)
+  // console.log(paths)
   return (   <div className="list-group">
     <a href="/" className="list-group-item"><i className="bi bi-twitter"></i> Tuiter</a>
-    <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+    <Link to="/tuiter/" className={`list-group-item ${paths.length === 2|| active === ''?'active':''}`}>
       <i className="bi bi-house-door-fill"></i> Home
     </Link>
     <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
@@ -34,10 +37,10 @@ const NavigationSidebar = () => {
                     ${active === 'lists'?'active':''}`}>
       <i className="bi bi-list-ul"></i> Lists
     </a>
-    <a href="/" className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
+    <Link to="/tuiter/profile" className={`list-group-item
+                    ${active === 'profile'|| active === 'edit-profile'?'active':''}`}>
       <i className="bi bi-person-circle"></i> Profile
-    </a>
+    </Link>
     <a href="/" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
       <i className="bi bi-three-dots"></i> More
