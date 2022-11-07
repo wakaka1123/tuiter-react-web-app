@@ -2,7 +2,7 @@ import React from "react";
 import TuitStats from "./TuitStats";
 import {useState} from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../tuits/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -25,13 +25,13 @@ const TuitItem = (
 
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
 
 
   return(
 
-      <div className="list-group-item">
+      <div className="list-group-item" key="123" >
 
       <div className="row wd-upper-component-border">
         <div className="col-2"><img className="wd-img wd-pos-avatar" src={`/images/${tuit.image}`} alt=""/></div>
@@ -44,7 +44,7 @@ const TuitItem = (
             </div>
             <div className="col-1">
               {/*<div className="">...</div>*/}
-              <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}/>
+              <i className="bi bi-x-lg float-end" onClick={() => dispatch(deleteTuitThunk(tuit._id))}/>
 
             </div>
           </div>
