@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 // import tuitsArray from "./tuits.json";
 import {useDispatch,useSelector} from "react-redux";
 import TuitItem from "./TuitItem";
-import {findTuitsThunk} from "../../services/tuits-thunks";
+import {deleteTuitThunk, findTuitsThunk} from "../../services/tuits-thunks";
 import "./index.css";
 
 
@@ -18,7 +18,7 @@ const TuitsList = () => {
       <ul className="list-group">
 
         {loading &&
-        <li className="list-group-item" key="">
+        <li className="list-group-item">
           Loading...
         </li>
         }

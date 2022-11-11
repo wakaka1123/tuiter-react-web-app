@@ -2,7 +2,8 @@ import React from "react";
 import TuitStats from "./TuitStats";
 import {useState} from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuitThunk} from "../../services/tuits-thunks";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
+import {updateTuit} from "./tuits-reducer";
 
 const TuitItem = (
     {
@@ -29,9 +30,49 @@ const TuitItem = (
   }
 
 
+  const isLiked = tuit.liked
+  // let updatedTuit
+
+
+  const updatedTuitHandler = ()=>{
+    // if(isLiked){
+    //   updatedTuit = {
+    //     ...tuit,
+    //     likes: tuit.likes-1,
+    //     liked: !isLiked
+    //   }
+    // } else {
+    //   updatedTuit = {
+    //     ...tuit,
+    //     likes: tuit.likes + 1,
+    //     liked: !isLiked
+    //   }
+    // }
+
+    const updatedTuit = {
+      ...tuit,
+      likes: tuit.likes+1,
+    }
+
+    // console.log(updatedTuit)
+    dispatch(updateTuitThunk(updatedTuit))
+    // dispatch(updateTuit(updatedTuit))
+  }
+
+  const updateTuitDislikeHandler = () =>{
+    const updatedTuit = {
+      ...tuit,
+      dislikes: tuit.dislikes+1,
+    }
+    dispatch(updateTuitThunk(updatedTuit))
+  }
+
+
+
+
   return(
 
-      <div className="list-group-item" key="123" >
+      <div className="list-group-item">
 
       <div className="row wd-upper-component-border">
         <div className="col-2"><img className="wd-img wd-pos-avatar" src={`/images/${tuit.image}`} alt=""/></div>
@@ -44,7 +85,7 @@ const TuitItem = (
             </div>
             <div className="col-1">
               {/*<div className="">...</div>*/}
-              <i className="bi bi-x-lg float-end" onClick={() => dispatch(deleteTuitThunk(tuit._id))}/>
+              <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}/>
 
             </div>
           </div>
@@ -54,7 +95,30 @@ const TuitItem = (
           </div>
 
 
-          <TuitStats tuitObjectToStats={tuit}/>
+          <div className="wd-bar" >
+            <div className="col-3 wd-bar-item"><i className="bi bi-chat"/>{tuit.replies}</div>
+            <div className="col-3 wd-bar-item"><i className="bi bi-arrow-repeat"/>{tuit.retuits}</div>
+            <div className="col-3 wd-bar-item">
+              {/*{isLiked && <i onClick={(e) => updatedTuitHandler(tuit)} className="bi bi-heart-fill wd-bar-item-liked" />}*/}
+              {/*{!isLiked && <i onClick={(e) => updatedTuitHandler(tuit)} className="bi bi-heart"/>}*/}
+              <i onClick={(e) => updatedTuitHandler()} className="bi bi-heart-fill wd-bar-item-liked"/>
+
+
+
+              {tuit.likes}
+
+            </div>
+            {/*<div className="col-3 wd-bar-item"><i className="bi bi-share"/>*/}
+
+              <div className="col-3 wd-bar-item"><i onClick={()=>updateTuitDislikeHandler()} className="bi bi-hand-thumbs-down"/>
+                {tuit.dislikes}
+
+            </div>
+          </div>
+
+
+
+          {/*<TuitStats tuitObjectToStats={tuit}/>*/}
 
 
         </div>

@@ -8,18 +8,19 @@ const WhatsHappening = () => {
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
-      // _id: (new Date()).getTime()+'',
+      _id: (new Date()).getTime()+'',
       tuit: whatsHappening,
-      // topic: "",
-      // username: "user",
-      // handle: "@currrentuser",
-      // time: "2h",
-      // image: "boring.png",
-      // title: "",
-      // likes: 0,
-      // liked: false,
-      // replies: 0,
-      // retuits: 0,
+      topic: "",
+      username: "user",
+      handle: "@currrentuser",
+      time: "2h",
+      image: "boring.png",
+      title: "",
+      likes: 0,
+      dislikes: 0,
+      liked: false,
+      replies: 0,
+      retuits: 0,
     }
     dispatch(createTuitThunk(newTuit));
     // console.log(whatsHappening)
