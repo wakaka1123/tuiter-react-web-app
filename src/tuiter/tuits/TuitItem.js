@@ -1,9 +1,9 @@
 import React from "react";
-import TuitStats from "./TuitStats";
-import {useState} from "react";
+// import TuitStats from "./TuitStats";
+// import {useState} from "react";
 import {useDispatch} from "react-redux";
 import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
-import {updateTuit} from "./tuits-reducer";
+// import {updateTuit} from "./tuits-reducer";
 
 const TuitItem = (
     {
@@ -30,7 +30,7 @@ const TuitItem = (
   }
 
 
-  const isLiked = tuit.liked
+  //const isLiked = tuit.liked
   // let updatedTuit
 
 
@@ -51,7 +51,7 @@ const TuitItem = (
 
     const updatedTuit = {
       ...tuit,
-      likes: tuit.likes+1,
+      likes: tuit.likes === 'undefined'? 1:tuit.likes+1,
     }
 
     // console.log(updatedTuit)
@@ -62,7 +62,7 @@ const TuitItem = (
   const updateTuitDislikeHandler = () =>{
     const updatedTuit = {
       ...tuit,
-      dislikes: tuit.dislikes+1,
+      dislikes: tuit.dislikes === 'undefined'? 1:tuit.dislikes+1,
     }
     dispatch(updateTuitThunk(updatedTuit))
   }
